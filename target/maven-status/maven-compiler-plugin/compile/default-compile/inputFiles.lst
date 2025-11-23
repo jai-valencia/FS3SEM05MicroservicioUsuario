@@ -1,0 +1,16 @@
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/MicroserviciosApplication.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/config/OracleWalletConfig.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/controller/UsuarioController.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/dto/LoginRequest.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/dto/LoginResponse.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/dto/UsuarioCreateDTO.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/dto/UsuarioResponse.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/dto/UsuarioUpdateDTO.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/model/Rol.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/model/Usuario.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/repository/RolRepository.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/repository/UsuarioRepository.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/security/JwtService.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/security/SecurityBeans.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/security/SecurityConfig.java
+/Users/jvalencia/Desktop/Duoc/4Bimestre/Fullstack3/Semana5/microserviciouser/usuario/src/main/java/com/duoc/service/UsuarioService.java
