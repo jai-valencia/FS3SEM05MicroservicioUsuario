@@ -3,10 +3,10 @@ services:
   usuario-service:
     build: .
     ports:
-      - "8080:8080"
+      - "8081:8081"
     volumes:
       - ./src/main/resources/wallet:/app/wallet:ro
     environment:
-      - SPRÇING_PROFILES_ACTIVE=docker
+      - SPRING_PROFILES_ACTIVE=docker
     restart: unless-stopped
     
