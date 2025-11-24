@@ -9,4 +9,6 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     restart: unless-stopped
-    
+    dns:
+      - 8.8.8.8  
+      - 1.1.1.1  
