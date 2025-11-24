@@ -1,51 +1,23 @@
-###Etapa de definición de build
-##FROM eclipse-temurin:17-jdk-alpine as build
-##RUN apk add --no-cache maven
-##WORKDIR /app
-##COPY pom.xml .
-##COPY src ./src
-##RUN mvn clean package -DskipTests
-##
-###Etapa de definición de la imagen final
-##FROM eclipse-temurin:17-jre-alpine
-##WORKDIR /app
-##COPY --from=build /app/target/*.jar app.jar
-##EXPOSE 8081
-##ENTRYPOINT ["java","-jar","app.jar"]
-
-# ================================
-# ETAPA 1: Build con Maven + JDK
-# ================================
-FROM eclipse-temurin:17-jdk AS build
-
-# Instalar Maven
-RUN apt-get update && apt-get install -y maven
-
+# Build
+FROM eclipse-temurin:25-jdk-alpine AS build
+RUN apk add --no-cache maven
 WORKDIR /app
-
 COPY pom.xml .
 COPY src ./src
-
-# Compilar el proyecto
 RUN mvn clean package -DskipTests
 
-
-# ================================
-# ETAPA 2: Imagen final (JRE)
-# ================================
-FROM eclipse-temurin:17-jre
-
+# Final image
+FROM eclipse-temurin:25-jre-alpine
 WORKDIR /app
 
-# Copiar JAR compilado
+# Copiar el jar
 COPY --from=build /app/target/*.jar app.jar
 
-# Copiar Oracle Wallet
-COPY wallet/ /app/wallet
 
-# Configurar el wallet
+
+# Variables para Oracle
 ENV TNS_ADMIN=/app/wallet
+ENV JAVA_TOOL_OPTIONS="-Doracle.net.tns_admin=/app/wallet"
 
-EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "app.jar"]
+EXPOSE 8081
+ENTRYPOINT ["java","-jar","app.jar"]
